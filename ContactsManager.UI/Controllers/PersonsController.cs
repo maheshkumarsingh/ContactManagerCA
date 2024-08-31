@@ -139,6 +139,7 @@ namespace ContactsManager.Controllers
         }
 
         [Route("[action]")]
+        [HttpGet]
         public async Task<IActionResult> PersonsPDF()
         {
             List<PersonResponseDTO> persons = await _personService.GetAllPersons();
@@ -149,6 +150,7 @@ namespace ContactsManager.Controllers
             };
         }
         [Route("[action]")]
+        [HttpGet]
         public async Task<IActionResult> PersonsCSV()
         {
             MemoryStream memoryStream =  await _personService.GetPersonsCSV();
@@ -156,6 +158,7 @@ namespace ContactsManager.Controllers
         }
 
         [Route("[action]")]
+        [HttpGet]
         public async Task<IActionResult> PersonsExcel()
         {
             MemoryStream memoryStream = await _personService.GetPersonsExcel();

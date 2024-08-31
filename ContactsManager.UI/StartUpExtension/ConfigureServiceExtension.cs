@@ -7,7 +7,7 @@ using RepositoryContracts;
 using ServiceContracts;
 using Services;
 
-namespace ContactsManager.StartUpExtension
+namespace ContactsManager.UI.StartUpExtension
 {
     public static class ConfigureServiceExtension
     {

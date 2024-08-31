@@ -6,7 +6,7 @@ using RepositoryContracts;
 using Repositories;
 using Serilog;
 using ContactsManager.Filters.ActionFilters;
-using ContactsManager.StartUpExtension;
+using ContactsManager.UI.StartUpExtension;
 namespace ContactsManager
 {
     public class Program
